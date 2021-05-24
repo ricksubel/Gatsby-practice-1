@@ -1,0 +1,50 @@
+.footer {
+    max-width: fit-content;
+    margin-right: 1rem;
+    text-align: center;
+    position: fixed;
+    right: 0px;
+    bottom: 0px;   
+}
+
+.copy {
+    font-size: 1rem;   
+}
+
+.image {
+    max-width: 75px;
+    border: 2px solid coral;
+    border-radius: 50%;
+}
+
+@media screen and (max-width: 600px) { 
+    .image {
+        max-width: 50px; 
+        transition: ease-in-out;   
+    }
+    .copy {
+        font-size: .75rem;
+    }
+    .footer {
+        position: relative;
+        float: right;
+    }   
+}
+@media screen and (max-width: 400px) { 
+    .image { 
+        max-width: 25px; 
+        margin-bottom: 0px; 
+        position: relative;
+        right: 0px;
+        bottom: 0px;
+        transition: ease-in-out;   
+    }
+    .copy {
+        font-size: 20px;
+    } 
+    // .footer {
+    //     position: fixed;
+    //     right: 0px;
+    //     bottom: 0px;
+    // }   
+}

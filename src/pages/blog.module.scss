@@ -1,0 +1,71 @@
+.welcome3 {
+    font-weight: normal;
+    margin: 1rem 0 2rem 18rem;
+}
+
+.posts {
+    list-style-type: none;
+    margin: 0 0 8rem 0;
+    padding: 0;
+    overflow: scroll;
+}
+
+.postContain {
+    display: flex;
+    flex-direction: row;
+    margin: 1rem 0 2rem 4rem;
+    padding: 1rem 0 1rem 2rem;
+    background: linear-gradient(to right, #b2dff735, rgba(255, 255, 255, 0));
+    border-top-left-radius: 50px;
+    box-shadow: 0  0 1.5px 0.15px  rgba(0, 217, 255, 0.084);
+    overflow: scroll;
+    
+    &.postContain:hover {
+    background: linear-gradient(to right, #7cff506d, rgba(193, 250, 182, 0));
+    }
+
+    .postLink {
+        color: #000000;
+        display: inline;
+        text-decoration: none;
+    }
+
+    .postTitle {
+        display: inline;
+        font-weight: normal;
+        opacity: 65%;
+    }
+
+    .pubDate {
+        display: inline;
+        color: #777777;
+        font-size: .8rem;
+        font-style: italic;
+        margin-left: 1rem;
+        opacity: 1;
+    }
+
+}
+.postContain, 
+.postTitle, 
+.pubDate {
+    animation: fadeIn linear .5s;
+}
+
+@keyframes fadeIn {
+    0% {right:-10px; opacity:0;}
+    100% {right: 100%; opacity:1;}
+}
+
+@media screen and (max-width: 600px) { 
+    .postContain { 
+        margin: 1rem .5rem; 
+        padding: 1rem 1rem;
+        font-size: .75rem;
+    }
+
+    .welcome3 {
+        font-size: 1.5rem;
+        margin: 1rem; 
+    }
+}

@@ -1,0 +1,89 @@
+.welcome, .welcome2, .welcome3, .welcome4 {
+    font-weight: normal;
+}
+
+.welcome {
+    margin: 1rem 0 2rem 2rem;
+}
+
+.welcome2 {
+    margin: 1rem 0 2rem 12rem;
+}
+
+// .welcome3 is on blog.module.scss
+
+.welcome4 {
+    margin: 1rem 0 2rem 24rem;
+}
+
+.message {
+    font-weight: normal;
+    max-width: 600px;
+    max-height: 100vh;
+    text-align: left;
+    font-size: 1.4rem;
+    opacity: 65%;
+    margin: 2rem 3rem 24rem 4rem;
+    padding: 1rem;
+    overflow: scroll;
+}
+
+.temp {
+    display: block;
+    min-height: 50vh;
+    align-items: center;
+    margin: 2rem 10rem 0 4rem;
+    padding: 1rem;
+}
+
+
+// ABOUT 
+.aboutContain {
+    display: flex;
+    flex-direction: column;
+    max-height: 70vh;
+    margin-right: 200px;
+    overflow: visible;
+}
+
+.contact {
+    margin: 4rem 4rem 0 3rem;
+}
+
+.iconContain {
+    // display: grid;
+    // grid-template-columns: repeat( 3, minmax(125px, 3fr) );
+    place-items: center;
+    // grid-gap: 10px;
+    
+}
+
+.icons {
+    padding: 1rem;
+
+    &:hover {
+        fill: gray
+    }
+}
+
+@media screen and (max-width: 600px) { 
+    .welcome, 
+    .welcome2,  
+    .welcome4, 
+    .aboutContain { 
+        font-size: 1.5rem;
+        margin: 1rem; 
+    }
+
+    .message {
+        margin: 0;
+        font-size: 1.25rem;
+        margin: 0 0 24rem 1.5rem;
+    }
+
+    .container { 
+        display: block;
+        max-width: 125px;
+    }
+
+}
