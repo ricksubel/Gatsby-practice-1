@@ -16,7 +16,7 @@ const ContactPage = () => {
   const twittURL = `https://twitter.com/ricksubel`;
   const gitURL = `https://github.com/ricksubel`;
   const linkURL = `https://www.linkedin.com/in/ricksubel/`;
-  const mailURL = `mailto:ricksubel@gmail.com?Subject=Hello`;
+  const mailURL = `mailto:ricksubel@gmail.com?Subject=Hello Rick!`;
 
   return (
     <Layout>

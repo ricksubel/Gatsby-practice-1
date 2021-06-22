@@ -18,7 +18,7 @@
 
 .message {
     font-weight: normal;
-    max-width: 600px;
+    max-width: 80%;
     max-height: 100vh;
     text-align: left;
     font-size: 1.4rem;
@@ -26,6 +26,7 @@
     margin: 2rem 3rem 24rem 4rem;
     padding: 1rem;
     overflow: scroll;
+    scroll-behavior: auto;
 }
 
 .temp {
@@ -48,6 +49,7 @@
 
 .contact {
     margin: 4rem 4rem 0 3rem;
+    min-height: 100vh;
 }
 
 .iconContain {
